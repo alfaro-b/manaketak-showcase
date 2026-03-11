@@ -73,7 +73,15 @@ Stockage photos (OVH Object Storage)
 
 ![Écoles](screenshots/adminPageEcole.png)
 
+## Architecture de l'application
 
+![Architecture Manaketak](architectureManaketak.png)
+
+L'application repose sur une architecture séparant le frontend,
+le backend et le stockage des médias. Le frontend Next.js déployé
+sur Vercel communique avec une API Symfony hébergée sur Scalingo,
+qui gère la logique métier, les données MySQL et l'accès aux photos
+stockées sur OVH Object Storage.
 
 ## Ce que ce projet m’a permis de travailler
 
